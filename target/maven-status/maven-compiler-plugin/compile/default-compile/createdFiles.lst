@@ -1,0 +1,6 @@
+com\paul\book\management\provider\service\impl\BookServiceImpl.class
+com\paul\book\management\provider\ProviderBootApplication.class
+com\paul\book\management\provider\controller\WelcomeController.class
+com\paul\book\management\provider\mapper\BookMapper.class
+com\paul\book\management\provider\ProviderSpringBootServletInitializer.class
+com\paul\book\management\provider\controller\BookController.class
