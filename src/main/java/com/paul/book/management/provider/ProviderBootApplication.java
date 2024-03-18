@@ -10,8 +10,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 @EnableDubbo
 @MapperScan({"com.paul.book.management.provider.mapper"})
 @SpringBootApplication
-public class ProviderBootApplication
-{
+public class ProviderBootApplication {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext springCtx = 
 				SpringApplication.run(ProviderBootApplication.class);	

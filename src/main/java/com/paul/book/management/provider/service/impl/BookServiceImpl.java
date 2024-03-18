@@ -19,11 +19,13 @@ public class BookServiceImpl implements IBookService {
 	@Autowired
 	private BookMapper bookMapper;
 	
+	@Override
 	public void createBook(Book book) {
 		System.out.println("book: " + book);
 		bookMapper.insertBook(book);
 	}
 	
+	@Override
 	public List<Book> getBooks(String bookId) {
 		List<Book> result = null;
 		result = bookMapper.selectBooks(bookId);
@@ -31,21 +33,24 @@ public class BookServiceImpl implements IBookService {
 		return result;
 	}
 
+	@Override
 	public Book getBook(String bookId) {
 		return bookMapper.selectBook(bookId);
 	}
 	
+	@Override
 	public List<Book> getAllBooks() {
 		List<Book> result = null;
 		result = bookMapper.selectAllBooks();
-		System.out.println("books: " + result);
 		return result;		
 	}
 	
+	@Override
 	public void updateBook(Book book) {
 		bookMapper.updateBook(book);
 	}
 	
+	@Override
 	public void deleteBook(String bookId) {
 		bookMapper.deleteBook(bookId);
 	}
