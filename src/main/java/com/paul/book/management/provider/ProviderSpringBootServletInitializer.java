@@ -8,7 +8,6 @@ public class ProviderSpringBootServletInitializer extends SpringBootServletIniti
 	
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-    	System.out.println("ProviderSpringBootServletInitializer.configure()!!!");
         return builder.sources(ProviderBootApplication.class);
     }	
   

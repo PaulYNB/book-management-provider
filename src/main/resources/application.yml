@@ -4,6 +4,13 @@ server:
     context-path: /book-management-provider
 
 spring:
+  web:
+    resources:
+      static-locations: 
+        - /public/
+        - classpath:/public/
+        - /static/
+        - classpath:/static/
   application:
     name: dubbo-book-management-provider
     #配置数据源信息
